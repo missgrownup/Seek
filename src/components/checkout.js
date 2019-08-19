@@ -70,7 +70,7 @@ class Checkout extends Component {
 		const prerequisiteIDs = Object.keys(rule.prerequisite)
 
 		if (minMatch > 0) {
-			remainingItems.sort()
+			remainingItems.sort((a, b) => (a.id > b.id ? 1 : -1))
 			prerequisiteIDs.forEach(itemID => {
 				remainingItems.splice(
 					remainingItems.findIndex(i => i.id === itemID),
