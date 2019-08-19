@@ -1,0 +1,75 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Customer /> should render customer component 1`] = `
+<select
+  onChange={[Function]}
+  value="customer3"
+>
+  <option
+    disabled={true}
+    value=""
+  >
+    Select customer
+  </option>
+  <option
+    value="customer1"
+  >
+    Default
+  </option>
+  <option
+    data-pricingrules="[{\\"type\\":\\"mixnmatch\\",\\"prerequisite\\":{\\"product1\\":3},\\"result\\":{\\"product1\\":2}}]"
+    value="customer2"
+  >
+    SecondBite
+  </option>
+  <option
+    data-pricingrules="[{\\"type\\":\\"discount\\",\\"prerequisite\\":{\\"product2\\":1},\\"result\\":299.99}]"
+    value="customer3"
+  >
+    Alix Coffee Roasters
+  </option>
+  <option
+    data-pricingrules="[{\\"type\\":\\"mixnmatch\\",\\"prerequisite\\":{\\"product2\\":5},\\"result\\":{\\"product2\\":4}},{\\"type\\":\\"discount\\",\\"prerequisite\\":{\\"product3\\":1},\\"result\\":389.99}]"
+    value="customer4"
+  >
+    Myer
+  </option>
+</select>
+`;
+
+exports[`Customer component should render customer component 1`] = `
+<select
+  onChange={[Function]}
+  value="customer3"
+>
+  <option
+    disabled={true}
+    value=""
+  >
+    Select customer
+  </option>
+  <option
+    value="customer1"
+  >
+    Default
+  </option>
+  <option
+    data-pricingrules="[{\\"type\\":\\"mixnmatch\\",\\"prerequisite\\":{\\"product1\\":3},\\"result\\":{\\"product1\\":2}}]"
+    value="customer2"
+  >
+    SecondBite
+  </option>
+  <option
+    data-pricingrules="[{\\"type\\":\\"discount\\",\\"prerequisite\\":{\\"product2\\":1},\\"result\\":299.99}]"
+    value="customer3"
+  >
+    Alix Coffee Roasters
+  </option>
+  <option
+    data-pricingrules="[{\\"type\\":\\"mixnmatch\\",\\"prerequisite\\":{\\"product2\\":5},\\"result\\":{\\"product2\\":4}},{\\"type\\":\\"discount\\",\\"prerequisite\\":{\\"product3\\":1},\\"result\\":389.99}]"
+    value="customer4"
+  >
+    Myer
+  </option>
+</select>
+`;

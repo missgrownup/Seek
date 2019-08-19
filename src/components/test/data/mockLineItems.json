@@ -1,0 +1,47 @@
+[
+	{
+		"id": "product1",
+		"name": "Classic Ad",
+		"retailPrice": 269.99
+	},
+	{
+		"id": "product1",
+		"name": "Classic Ad",
+		"retailPrice": 269.99
+	},
+	{
+		"id": "product1",
+		"name": "Classic Ad",
+		"retailPrice": 269.99
+	},
+	{
+		"id": "product2",
+		"name": "Stand out Ad",
+		"retailPrice": 322.99
+	},
+	{
+		"id": "product2",
+		"name": "Stand out Ad",
+		"retailPrice": 322.99
+	},
+	{
+		"id": "product2",
+		"name": "Stand out Ad",
+		"retailPrice": 322.99
+	},
+	{
+		"id": "product2",
+		"name": "Stand out Ad",
+		"retailPrice": 322.99
+	},
+	{
+		"id": "product3",
+		"name": "Premium Ad",
+		"retailPrice": 394.99
+	},
+	{
+		"id": "product3",
+		"name": "Premium Ad",
+		"retailPrice": 394.99
+	}
+]
