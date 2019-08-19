@@ -1,4 +1,4 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was code test for SEEK Learning
 
 ## Available Scripts
 
@@ -6,63 +6,38 @@ In the project directory, you can run:
 
 ### `npm start`
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+Runs the app in the development mode.<br> Open
+[http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 ### `npm test`
 
 Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
 ### `npm run build`
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Builds the app for production to the `build` folder.<br> It correctly bundles
+React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+### `project summary`
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+This is product is to build a job ads checkout page. In this project you could
+first choose different customers, which contains different pricing rules. Then
+in checkout section, you add products to cart, it will figure out how much in
+total based on different pricing rules/different customers.
 
-### `npm run eject`
+### `pricing rules senarios`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- single match, e.g. buy 5 classic ads for 4
+- min and match, e.g. buy 2 classic ads and 1 stand out ad for \$999
+- discount, e.g. buye premium ad for \$249
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### `things to improve`
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+- Customers and products should be dynamic from database.
+- Pricing rule result can only accept a single KVP or a number, which doesn't
+  work for senarios like: 20% off or \$200 off. But I don't think multiple KVP
+  would be a necessary case.
+- Move methods in checkout.js component to ultils if they could share with other
+  components.
+- In checkout component, should be able to navigate back to change to a
+  different customer.

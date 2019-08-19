@@ -8,7 +8,6 @@
 		"name": "SecondBite",
 		"pricingRules": [
 			{
-				"type": "mixnmatch",
 				"prerequisite": { "product1": 3 },
 				"result": { "product1": 2 }
 			}
@@ -19,7 +18,6 @@
 		"name": "Alix Coffee Roasters",
 		"pricingRules": [
 			{
-				"type": "discount",
 				"prerequisite": { "product2": 1 },
 				"result": 299.99
 			}
@@ -30,12 +28,10 @@
 		"name": "Myer",
 		"pricingRules": [
 			{
-				"type": "mixnmatch",
 				"prerequisite": { "product2": 5 },
 				"result": { "product2": 4 }
 			},
 			{
-				"type": "discount",
 				"prerequisite": { "product3": 1 },
 				"result": 389.99
 			}

@@ -18,7 +18,6 @@ describe('<JobAds />', () => {
 			name: 'Alix Coffee Roasters',
 			pricingRules: [
 				{
-					type: 'discount',
 					prerequisite: { product2: 1 },
 					result: 299.99,
 				},
