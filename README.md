@@ -37,7 +37,7 @@ total based on different pricing rules/different customers.
 - Pricing rule result can only accept a single KVP or a number, which doesn't
   work for senarios like: 20% off or \$200 off. But I don't think multiple KVP
   would be a necessary case.
-- Move methods in checkout.js component to ultils if they could share with other
-  components.
+- Add qty to cart so that could add multiple items
+- Add remove button for lineItems so could remove item from cart
 - In checkout component, should be able to navigate back to change to a
   different customer.

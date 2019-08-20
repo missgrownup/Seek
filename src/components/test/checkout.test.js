@@ -15,7 +15,7 @@ const mockSelectedProduct = {
 const mockPricingRules1 = [
 	{
 		prerequisite: { product2: 3 },
-		result: { product2: 2 },
+		result: [322.99, 2],
 	},
 	{
 		prerequisite: { product3: 1 },
@@ -64,11 +64,6 @@ describe('<Checkout />', () => {
 				lineItems: mockLineItems,
 			})
 		})
-		it('should not call discount calculate function', () => {
-			const spy = jest.spyOn(instance, 'getMinMatchTimes')
-			instance.calculateTotal()
-			expect(spy).not.toHaveBeenCalled()
-		})
 		it('should sum up total price without any discount', () => {
 			instance.calculateTotal()
 			expect(wrapper.state('totalPrice')).toEqual(2891.91)
@@ -85,25 +80,6 @@ describe('<Checkout />', () => {
 				lineItems: mockLineItems,
 			})
 		})
-		it('should return 1 for the minmatch for the first rule', () => {
-			const minMatch = instance.getMinMatchTimes(
-				mockLineItems,
-				mockPricingRules1[0],
-			)
-			expect(minMatch).toEqual(1)
-		})
-		it('should return 2 for the minmatch for the second rule', () => {
-			const minMatch = instance.getMinMatchTimes(
-				mockLineItems,
-				mockPricingRules1[1],
-			)
-			expect(minMatch).toEqual(2)
-		})
-		it('should call discount calculate function twice', () => {
-			const spy = jest.spyOn(instance, 'getMinMatchTimes')
-			instance.calculateTotal()
-			expect(spy).toHaveBeenCalledTimes(2)
-		})
 		it('should sum up total price with multiple discount', () => {
 			instance.calculateTotal()
 			expect(wrapper.state('totalPrice')).toEqual(2558.92)
@@ -119,13 +95,6 @@ describe('<Checkout />', () => {
 			wrapper.setState({
 				lineItems: mockLineItems,
 			})
-		})
-		it('should return 1 for the minmatch for the rule', () => {
-			const minMatch = instance.getMinMatchTimes(
-				mockLineItems,
-				mockPricingRules2[0],
-			)
-			expect(minMatch).toEqual(1)
 		})
 		it('should sum up total price with multiple discount', () => {
 			instance.calculateTotal()

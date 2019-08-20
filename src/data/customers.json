@@ -9,7 +9,7 @@
 		"pricingRules": [
 			{
 				"prerequisite": { "product1": 3 },
-				"result": { "product1": 2 }
+				"result": [269.99, 2]
 			}
 		]
 	},
@@ -29,7 +29,7 @@
 		"pricingRules": [
 			{
 				"prerequisite": { "product2": 5 },
-				"result": { "product2": 4 }
+				"result": [322.99, 4]
 			},
 			{
 				"prerequisite": { "product3": 1 },
