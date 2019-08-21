@@ -28,8 +28,8 @@ total based on different pricing rules/different customers.
 ### `pricing rules senarios`
 
 - single match, e.g. buy 5 classic ads for 4
-- min and match, e.g. buy 2 classic ads and 1 stand out ad for \$999
-- discount, e.g. buye premium ad for \$249
+- mix and match, e.g. buy 2 classic ads and 1 stand out ad for \$999
+- discount, e.g. buy premium ad for \$249
 
 ### `things to improve`
 
